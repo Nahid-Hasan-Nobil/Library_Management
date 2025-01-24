@@ -1,0 +1,294 @@
+body {
+    background-color: #f4f9fc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Position the id-container absolutely inside the container */
+.id-container {
+    position: absolute;
+    top: 10px; /* Adjust the top position to suit your preference */
+    left: 10px; /* Adjust the left position */
+}
+
+.id-container img {
+    width: 100px;
+    height: auto;
+}
+
+/* Container for the entire page */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top block that holds the book list */
+.top-block {
+    width: 100%;
+    background-color:  #ffffff;
+    margin-bottom: 15px;
+    border: 2px solid #a3c3f0;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em; /* Reduced font size to match other blocks */
+    color: #0056b3;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top-block table {
+    width: 90%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.top-block th, .top-block td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #a3c3f0;
+    color: #333;
+}
+
+.top-block th {
+    background-color: #e0f2fe;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.top-block td {
+    background-color: #f1f8ff;
+    color: #0056b3;
+}
+
+.middle-block {
+    width: 100%;
+    background-color: #ffffff; /* Match background with semi-block */
+    border: 2px solid #a3c3f0; /* Maintain border consistency */
+    border-radius: 8px; /* Smooth corners for uniformity */
+    padding: 15px; /* Consistent padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em; /* Adjust font size */
+    color: #0056b3; /* Font color consistency */
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Space between blocks */
+}
+
+.middle-block h3 {
+    font-size: 1.2em; /* Match heading size with semi-blocks */
+    color: #0056b3; /* Maintain text color */
+    margin-bottom: 10px; /* Spacing below heading */
+}
+
+.edit-form {
+    width: 100%; /* Full width for better alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Left-align form elements */
+    padding: 10px 0; /* Padding inside the form */
+}
+
+.edit-form label {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333; /* Standard text color */
+}
+
+.edit-form input {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #a3c3f0; /* Match input borders */
+    border-radius: 5px; /* Smooth corners */
+    outline: none;
+    width: 100%; /* Full width inputs */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.edit-form button {
+    margin-top: 15px;
+    background-color: #0056b3; /* Consistent button color */
+    color: white; /* Text contrast */
+    border: none;
+    border-radius: 5px; /* Smooth corners for buttons */
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Hover effect */
+    width: 100%; /* Full-width button */
+}
+
+.edit-form button:hover {
+    background-color: #003f7a; /* Darker shade on hover */
+}
+
+.edit-form input:focus {
+    border: 2px solid #0056b3; /* Highlight focused inputs */
+}
+
+
+
+/* Semi-bottom block container */
+.semi-bottom-block-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.semi-bottom-block {
+    width: 48%;
+    background-color: #ffffff;
+    border: 2px solid #a3c3f0;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.semi-bottom-block h3 {
+    font-size: 1.2em;
+    color: #0056b3;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.semi-bottom-block ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.semi-bottom-block ul li {
+    background-color: #f1f8ff;
+    color: #0056b3;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #a3c3f0;
+    font-size: 0.95em;
+    text-align: center;
+}
+
+/* Side container with small blocks */
+.side {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.small-block {
+    width: 30%;
+    height: 370px;
+    background-color: #ffffff;
+    border: 2px solid #a3c3f0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-block img {
+    width: 90%; /* Scale to fit the block */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 90%; /* Prevent overflow */
+    object-fit: cover; /* Fill the block neatly */
+    display: block;
+    border-radius: 8px;
+}
+
+/* Semi-block container */
+.semi-block-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.semi-block {
+    width: 48%;
+    background-color: #ffffff;
+    border: 2px solid #a3c3f0;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Borrow and Entry Forms */
+.borrow-form, .entry-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.borrow-form label, .entry-form label {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.borrow-form input, .entry-form input, .borrow-form select, .entry-form select {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #a3c3f0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.borrow-form button, .entry-form button {
+    margin-top: 15px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.borrow-form button:hover, .entry-form button:hover {
+    background-color: #003f7a;
+}
+
+.semi-block h3 {
+    font-size: 1.2em;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.borrow-form input:focus, .entry-form input:focus, 
+.borrow-form select:focus, .entry-form select:focus {
+    border: 2px solid #0056b3;
+}
+
+.borrow-form button:active, .entry-form button:active {
+    background-color: #003f7a;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    margin: 5px 0;
+}
